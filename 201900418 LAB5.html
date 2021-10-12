@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+ <title>201900418_LAB5 </title>
+ <style>
+ * {
+  box-sizing: border-box;
+}
+ body{margin: 0;
+  padding: 0;
+ }
+ h2{font-size:30px;
+   font-family: Courier;
+   color:#943d24; }
+
+
+ /*styling the header & logo*/
+
+ .header {
+  padding: 20px;
+  margin:auto;
+  font-family:'Brush Script MT', cursive;
+  text-align: center;
+  background: #e4ddf4;
+  color: #2d2d2d;
+}
+.header img {
+  position:relative;
+   float: left;
+   position: relative;
+   height: 190px;
+   background:#e4ddf4;
+ }
+
+ .header h1 {
+   font-size: 90px;
+   position: center;
+   top: 18px;
+   left: 10px;
+ }
+/* Style the menu inside the navigation bar */
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #943d24;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #fffbf0;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 25%;
+  flex: 30%;
+  background-color:#f2f2f2 ;
+  padding: 20px;
+}
+
+.main p{
+  font-size: 20px;
+  font-family: papyrus;
+}
+.main {
+  -ms-flex: 75%;
+  flex: 70%;
+  background-color:#fffbf0;
+  padding: 20px;
+}
+
+body {
+
+  font-family: Helvetica, sans-serif;
+}
+/*timeline*/
+/* The actual timeline (the vertical ruler) */
+
+.timeline h1{font-size:30px;
+  font-family: Courier;
+  color:#943d24;
+  text-align: center;
+}
+.timeline h2{
+  font-size:15px;
+}
+.timeline p{
+  font-size: 10px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 550px;
+  background-color: white;
+  top: -2;
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 50px;
+  position: relative;
+  background-color: inherit;
+  width: 60%;
+}
+
+/* Place the container to the left */
+.left {
+  left: -2%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 41%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 40px;
+  border: medium solid #D35400;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #D35400;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 40px;
+  border: medium solid black;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent black transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -11px;
+}
+
+/* The actual content */
+.content {
+  padding: 2px 3px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/*myphotos*/
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+/*right corner image*/
+.rightimg {float: right;
+top:2px;
+}
+
+.myimg{
+  display:flex;
+
+}
+.column {
+  flex:25%;
+  padding: 1.5px;
+}
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+
+}
+/*footer*/
+.footer {
+  padding: 50px;
+  background:#e4ddf4;
+}
+
+
+td,th {
+  text-align: left;
+  padding:10px 0;
+}
+table {font-family:SimSun;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+border-spacing:200px 0;
+}
+
+
+</style>
+</head>
+<body>
+  <head>
+
+    <div class="header">
+      <img src=" https://cdn5.vectorstock.com/i/thumb-large/70/54/letter-yv-simple-linked-geometric-design-symbol-vector-32147054.jpg" alt="logo" />
+      <h1><u>Yash Vijay.</u></h1>
+    </div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#About">About</a></li>
+  <li><a href="#Education">Education</a></li>
+  <li><a href="#Resume">Resume</a></li>
+  <li><a href="#Hobbies">Hobbies</a></li>
+  <li><a href="#Contact">Contact</a></li>
+</ul>
+<div class="row">
+<div class="side">
+    <div class="timeline">
+      <h1>My Timeline</h1>
+  <div class="container left">
+    <div class="content">
+      <h2>DOB</h2>
+      <p>12/12/1999</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Primary School</h2>
+      <p>J.V.M Shyamali</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>university</h2>
+      <p>Sikkim Manipal Institute of Technology</p>
+    </div>
+  </div>
+    <div class="container right">
+    <div class="content">
+      <h2>Higher Education</h2>
+      <p>B.tech in Comp.science Engineering</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>Specialised</h2>
+      <p>HTML , CSS , JavaScript</p>
+    </div>
+  </div>
+    <div class="container right">
+    <div class="content">
+      <h2>Job</h2>
+      <p>Alpha Inc.co</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="main">
+    <div class="rightimg" >
+      <img src="https://miro.medium.com/max/466/1*2811x3YDVadCocsO9NQyLw.jpeg" alt="baby"  width="160" >
+    </div>
+    <h2>Welcome</h2>
+
+    <p>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.</p>
+    <br/>
+
+<h2>My Photographs</h2>
+  <div class="myimg" style="height:200px;">
+     <div class="column">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKxPLbkzEmQj7mLlF7uS5EtAq8pemUYUDBNA&usqp=CAU" alt="baby" width="160" height="160">
+     </div>
+     <div class="column">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdtvCbnvGaH6BOstMnVKdC1T4KEAy74g8Zcw&usqp=CAU" alt="baby"  width="160" height="160">
+     </div>
+     <div class="column">
+       <img src="https://thumbs.dreamstime.com/b/smiling-rich-kid-boy-sunglasses-leather-jacket-bundle-money-dollars-cash-holding-his-finger-up-showing-first-sign-160829964.jpg" alt="baby"  width="160" height="160">
+     </div>
+     <div class="column">
+       <img src="https://cdn-p.thekidspassport.com/uploads/photos/78248/web_grid_3x_766e6bf2-2485-4088-9f69-1fceab839a44.jpeg" alt="baby"  width="160" height="160">
+     </div>
+     <div class="column">
+       <img src="https://img.freepik.com/free-photo/positive-human-emotions-reaction-feelings-emotional-happy-dark-skinned-boy-multi-colored-jumper-making-thumbs-up-gesture-expressing-agreement-approval-giving-his-like-smiling-broadly_343059-4499.jpg?size=626&ext=jpg" alt="baby"  width="160" height="160">
+     </div>
+  </div>
+
+    <p></p>
+  </div>
+</div>
+
+<div class="footer">
+  <table>
+  <tr>
+    <th style="color:#943d24;font-size:35px;">Home Address</th>
+    <th style="color:#943d24;font-size:35px;">College Address</th>
+    <th style="color:#943d24;font-size:35px;">Contact Details</th>
+  </tr>
+  <tr>
+    <td>Sita ram complex,</td>
+    <td>SMIT,</td>
+    <td>221021</td>
+  </tr>
+  <tr>
+    <td> Hinoo chowk,Airport Road</td>
+    <td>Rangpo,Mazitar</td>
+    <td>yash_201900418@smit.smu.edu.in</td>
+  </tr>
+  <tr>
+    <td>Ranchi-834002 </td>
+    <td>Sikkim-737136</td>
+    <td><img src="https://smallimg.pngkey.com/png/small/1-18291_instagram-logo-black-instagram-logo.png" alt="logo" width="20" >Instagram</td>
+  </tr>
+  </table>
+
+</div>
