@@ -1,2 +1,2 @@
 # SL-lab5
-scripting lab 5
+Example of a portfolio website
